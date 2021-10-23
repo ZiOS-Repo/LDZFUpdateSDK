@@ -1,0 +1,6 @@
+framework module LDZFUpdateSDK {
+  umbrella header "LDZFUpdateSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

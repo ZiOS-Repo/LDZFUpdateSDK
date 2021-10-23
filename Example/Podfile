@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LDZFUpdateSDK_Example' do
+  pod 'LDZFUpdateSDK', :path => '../'
+
+  target 'LDZFUpdateSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

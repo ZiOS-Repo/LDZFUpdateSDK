@@ -1,0 +1,6 @@
+framework module Pods_LDZFUpdateSDK_Example {
+  umbrella header "Pods-LDZFUpdateSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
