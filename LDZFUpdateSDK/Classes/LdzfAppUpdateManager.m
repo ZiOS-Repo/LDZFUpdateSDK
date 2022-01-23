@@ -1,43 +1,43 @@
 //
-//  IUAppUpdateManager.m
+//  LdzfAppUpdateManager.m
 //  IU_UpdateSDK
 //
 //
 
-#import "IUAppUpdateManager.h"
+#import "LdzfAppUpdateManager.h"
 
-#import "IUUpdateUtils.h"
-#import "IUAppUpdateManager.h"
-#import "IUAppUpdateConfig.h"
-#import "IUNetworkReachabilityManager.h"
+#import "LdzfUpdateUtils.h"
+#import "LdzfAppUpdateManager.h"
+#import "LdzfAppUpdateConfig.h"
+#import "LdzfUpdateNetworkReachabilityManager.h"
 #import <WebKit/WebKit.h>
 
-#import "IUAppUpdateResponseModel.h"
+#import "LdzfAppUpdateResponseModel.h"
 
-static NSString * const CRJAppUpdateServerUrl = @"dmz/appupdate/appupdate.do";
+static NSString * const LdzfAppUpdateServerUrl = @"dmz/appupdate/appupdate.do";
 
-static NSString * const CRJAppUpdateResponseCode = @"code";
-static NSString * const CRJAppUpdateResponseVersion = @"version";
-static NSString * const CRJAppUpdateResponsePriority = @"priority";
-static NSString * const CRJAppUpdateResponseDescription = @"description";
-static NSString * const CRJAppUpdateResponseDownloadUrl = @"downloadUrl";
-static NSString * const CRJAppUpdateResponsePlistUrl = @"plistUrl";
-static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
+static NSString * const LdzfAppUpdateResponseCode = @"code";
+static NSString * const LdzfAppUpdateResponseVersion = @"version";
+static NSString * const LdzfAppUpdateResponsePriority = @"priority";
+static NSString * const LdzfAppUpdateResponseDescription = @"description";
+static NSString * const LdzfAppUpdateResponseDownloadUrl = @"downloadUrl";
+static NSString * const LdzfAppUpdateResponsePlistUrl = @"plistUrl";
+static NSString * const LdzfAppUpdateResponseiosPlistUrl = @"iospListUrl";
 
-@interface IUAppUpdateManager ()
+@interface LdzfAppUpdateManager ()
 
-@property (nonatomic, strong) IUAppUpdateConfig *config;
+@property (nonatomic, strong) LdzfAppUpdateConfig *config;
 
 @end
 
-@implementation IUAppUpdateManager
+@implementation LdzfAppUpdateManager
 
 + (instancetype)sharedManager
 {
-    static IUAppUpdateManager *_instance = nil;
+    static LdzfAppUpdateManager *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[IUAppUpdateManager alloc] init];
+        _instance = [[LdzfAppUpdateManager alloc] init];
     });
     return _instance;
 }
@@ -45,28 +45,28 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
 - (void)addObserverOfNetWorkReachabilityChange
 {
     //这里是监听网络情况
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkReachabilityChanged:) name:IUNetworkingReachabilityDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkReachabilityChanged:) name:LdzfUpdateNetworkReachabilityDidChangeNotification object:nil];
 }
 
 - (void)checkNetworkReachabilityChanged:(NSNotification *)notification
 {
-    BOOL status = [[IUNetworkReachabilityManager sharedManager] isReachable];
+    BOOL status = [[LdzfUpdateNetworkReachabilityManager sharedManager] isReachable];
 
     if (status)
     {
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:IUNetworkingReachabilityDidChangeNotification object:nil];
-        [[IUNetworkReachabilityManager sharedManager] stopMonitoring];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:LdzfUpdateNetworkReachabilityDidChangeNotification object:nil];
+        [[LdzfUpdateNetworkReachabilityManager sharedManager] stopMonitoring];
 
         [self checkAppUpdate:self.config];
     }
 }
 
-- (void)checkAppUpdate:(IUAppUpdateConfig *)config
+- (void)checkAppUpdate:(LdzfAppUpdateConfig *)config
 {
     [self checkAppUpdate:config success:nil failture:nil];
 }
 
-- (void)checkAppUpdate:(IUAppUpdateConfig *)config
+- (void)checkAppUpdate:(LdzfAppUpdateConfig *)config
                success:(AppUpdateCallback _Nullable)successCallback
               failture:(AppUpdateCallback _Nullable)failtureCallback
 {
@@ -81,12 +81,12 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
     params[IUAppUpdateOsVersionKey] = config.osVersion;
 
     NSString *host = config.host;
-    NSString *URLString = [NSString stringWithFormat:@"%@/%@", host, CRJAppUpdateServerUrl];
+    NSString *URLString = [NSString stringWithFormat:@"%@/%@", host, LdzfAppUpdateServerUrl];
 
     NSLog(@"params = %@, url = %@", params, URLString);
 
     NSURL *url = [NSURL URLWithString:URLString];
-    NSData *bodyData = [[IUUpdateUtils stringWithObject:params] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *bodyData = [[LdzfUpdateUtils stringWithObject:params] dataUsingEncoding:NSUTF8StringEncoding];
 
     NSMutableURLRequest *mutableRequest = [[NSMutableURLRequest alloc] initWithURL:url];
 
@@ -100,11 +100,11 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
         NSLog(@"response ============ %@ /n error ============ %@",response,error);
         if (error)
         {
-            [[IUNetworkReachabilityManager sharedManager] startMonitoring];
+            [[LdzfUpdateNetworkReachabilityManager sharedManager] startMonitoring];
             [self addObserverOfNetWorkReachabilityChange];
-            NSLog(@"CRJAppUpgradeError->%@", error.localizedDescription);
+            NSLog(@"LdzfAppUpgradeError->%@", error.localizedDescription);
             if (failtureCallback) {
-                IUAppUpdateResponseModel *model = [[IUAppUpdateResponseModel alloc] init];
+                LdzfAppUpdateResponseModel *model = [[LdzfAppUpdateResponseModel alloc] init];
                 model.errMsg = error.localizedDescription;
                 failtureCallback(model);
             }
@@ -112,7 +112,7 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
         else
         {
             NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSDictionary *response = [IUUpdateUtils objectFromJsonString:jsonString];
+            NSDictionary *response = [LdzfUpdateUtils objectFromJsonString:jsonString];
             NSLog(@"jsonString %@",jsonString);
             NSString *code = [response objectForKey:@"code"];
             id data = [response objectForKey:@"data"];
@@ -121,22 +121,22 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
                 [self handleResponse:data];
                 
                 if (successCallback) {
-                    IUAppUpdateResponseModel *model = [[IUAppUpdateResponseModel alloc] init];
+                    LdzfAppUpdateResponseModel *model = [[LdzfAppUpdateResponseModel alloc] init];
                     model.errMsg = nil;
-                    model.code = [data[CRJAppUpdateResponseCode] integerValue];
+                    model.code = [data[LdzfAppUpdateResponseCode] integerValue];
                     model.msg = data[@"msg"];
-                    model.priority = data[CRJAppUpdateResponsePriority];
-                    model.downloadUrl = data[CRJAppUpdateResponseDownloadUrl];
+                    model.priority = data[LdzfAppUpdateResponsePriority];
+                    model.downloadUrl = data[LdzfAppUpdateResponseDownloadUrl];
                     model.md5 = data[@"md5"];
                     model.size = data[@"size"];
-                    model.version = data[CRJAppUpdateResponseVersion];
-                    model.descMsg = data[CRJAppUpdateResponseDescription];
-                    model.iospListUrl = data[CRJAppUpdateResponseiosPlistUrl];
+                    model.version = data[LdzfAppUpdateResponseVersion];
+                    model.descMsg = data[LdzfAppUpdateResponseDescription];
+                    model.iospListUrl = data[LdzfAppUpdateResponseiosPlistUrl];
                     successCallback(model);
                 }
             }else if (failtureCallback) {
                 NSString *msg = [response objectForKey:@"msg"];
-                IUAppUpdateResponseModel *model = [[IUAppUpdateResponseModel alloc] init];
+                LdzfAppUpdateResponseModel *model = [[LdzfAppUpdateResponseModel alloc] init];
                 model.errMsg = msg;
                 failtureCallback(model);
             }
@@ -150,22 +150,22 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
     
     if (!response || response.count <= 0) return;
 
-    NSInteger responseCode = [response[CRJAppUpdateResponseCode] integerValue];
+    NSInteger responseCode = [response[LdzfAppUpdateResponseCode] integerValue];
 
     if (responseCode == 20)
     {
-        NSLog(@"CRJAppUpgradeError-> 升级网络结果 - 出错");
+        NSLog(@"LdzfAppUpgradeError-> 升级网络结果 - 出错");
         return;
     }
     
     [self showUpdateAlertWithResponse:response];
 
-    NSLog(@"CRJAppUpgrade-> 升级网络结果 - 完成");
+    NSLog(@"LdzfAppUpgrade-> 升级网络结果 - 完成");
 }
 
 - (void)showUpdateAlertWithResponse:(NSDictionary *)response
 {
-    NSNumber *priority = response[CRJAppUpdateResponsePriority];
+    NSNumber *priority = response[LdzfAppUpdateResponsePriority];
 
     if ([priority integerValue] == 0)
     {
@@ -179,11 +179,11 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
 //弹出提示框
 - (void)showAlert:(NSDictionary *)response
 {
-    NSNumber *priority = response[CRJAppUpdateResponsePriority];
+    NSNumber *priority = response[LdzfAppUpdateResponsePriority];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self hideKeyBoard];
 
-        NSString *description = response[CRJAppUpdateResponseDescription];
+        NSString *description = response[LdzfAppUpdateResponseDescription];
         if(description == nil || description.length == 0)
         {
             description = @"升级描述";
@@ -221,7 +221,7 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
 //跳转升级页面
 - (void)gotoUpdateApp:(NSDictionary *)response
 {
-    NSString *urlStr = response[CRJAppUpdateResponseiosPlistUrl];
+    NSString *urlStr = response[LdzfAppUpdateResponseiosPlistUrl];
     NSURL *URL = [NSURL URLWithString:urlStr];
     UIApplication *application = [UIApplication sharedApplication];
     if (@available(iOS 10.0, *)) {
@@ -235,7 +235,7 @@ static NSString * const CRJAppUpdateResponseiosPlistUrl = @"iospListUrl";
         }
     }
     
-    NSNumber *priority = response[CRJAppUpdateResponsePriority];
+    NSNumber *priority = response[LdzfAppUpdateResponsePriority];
     if([priority intValue] != 1)
     {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

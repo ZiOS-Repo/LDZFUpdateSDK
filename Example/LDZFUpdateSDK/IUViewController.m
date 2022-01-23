@@ -48,9 +48,9 @@
     NSString *appVersion = kAppVersion;
     NSString *encryptRsaKey = [self base64EncodeString:RSA_KEY];
     NSString *puuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
-    IUAppUpdateConfig *config = [[IUAppUpdateConfig alloc] initWithAppId:appId appVersion:appVersion encryptRsaKey:encryptRsaKey deviceId:puuid host:kHOST];
+    LdzfAppUpdateConfig *config = [[LdzfAppUpdateConfig alloc] initWithAppId:appId appVersion:appVersion encryptRsaKey:encryptRsaKey deviceId:puuid host:kHOST];
         
-    [[IUAppUpdateManager sharedManager] checkAppUpdate:config success:^(IUAppUpdateResponseModel * _Nonnull response) {
+    [[LdzfAppUpdateManager sharedManager] checkAppUpdate:config success:^(LdzfAppUpdateResponseModel * _Nonnull response) {
         BOOL isUpdate =NO;
         if (response.code == 20) {
             //客户端版本已最新，无需更新
@@ -63,7 +63,7 @@
         if (completion) {
             completion(isUpdate,response.msg,nil);
         }
-    } failture:^(IUAppUpdateResponseModel * _Nonnull response) {
+    } failture:^(LdzfAppUpdateResponseModel * _Nonnull response) {
         if (completion) {
             completion(NO,nil,response.errMsg);
         }

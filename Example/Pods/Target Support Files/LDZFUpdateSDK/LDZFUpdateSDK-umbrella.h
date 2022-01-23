@@ -10,12 +10,12 @@
 #endif
 #endif
 
-#import "IUAppUpdateConfig.h"
-#import "IUAppUpdateManager.h"
-#import "IUAppUpdateResponseModel.h"
-#import "IUNetworkReachabilityManager.h"
-#import "IUUpdateUtils.h"
+#import "LdzfAppUpdateConfig.h"
+#import "LdzfAppUpdateManager.h"
+#import "LdzfAppUpdateResponseModel.h"
+#import "LdzfUpdateNetworkReachabilityManager.h"
 #import "LDZFUpdateSDK.h"
+#import "LdzfUpdateUtils.h"
 
 FOUNDATION_EXPORT double LDZFUpdateSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char LDZFUpdateSDKVersionString[];

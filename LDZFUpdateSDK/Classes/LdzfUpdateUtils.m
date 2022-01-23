@@ -1,12 +1,12 @@
 //
-//  IUUpdateUtils.m
+//  LdzfUpdateUtils.m
 //  IU_UpdateSDK
 //
 //
 
-#import "IUUpdateUtils.h"
+#import "LdzfUpdateUtils.h"
 
-@implementation IUUpdateUtils
+@implementation LdzfUpdateUtils
 
 + (NSString *)encryptRSAWithString:(NSString *)string publicKey:(NSString *)publicKey
 {

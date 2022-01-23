@@ -1,11 +1,11 @@
 //
-//  IUAppUpdateConfig.m
+//  LdzfAppUpdateConfig.m
 //  IU_UpdateSDK
 //
 //
 
-#import "IUAppUpdateConfig.h"
-#import "IUUpdateUtils.h"
+#import "LdzfAppUpdateConfig.h"
+#import "LdzfUpdateUtils.h"
 
 #import <UIKit/UIKit.h>
 #import <AdSupport/AdSupport.h>
@@ -29,7 +29,7 @@ NSString * const IUAppUpdateDeviceIdKey = @"deviceId";
 NSString * const IUAppUpdateEncryptRsaKey = @"rsaKey";
 
 
-@interface IUAppUpdateConfig ()
+@interface LdzfAppUpdateConfig ()
 
 @property (nonatomic, copy, readwrite) NSString *e_version; // RSA秘钥版本号(如果存在e_model则必填)
 @property (nonatomic, copy, readwrite) NSString *e_model; // 对敏感信息使用RSA加密后的字符串
@@ -43,11 +43,11 @@ NSString * const IUAppUpdateEncryptRsaKey = @"rsaKey";
 
 @end
 
-@implementation IUAppUpdateConfig
+@implementation LdzfAppUpdateConfig
 
 + (instancetype)configWithDict:(NSDictionary *)dictionary
 {
-    IUAppUpdateConfig *config = [[IUAppUpdateConfig alloc] init];
+    LdzfAppUpdateConfig *config = [[LdzfAppUpdateConfig alloc] init];
 
     if (config != nil)
     {
@@ -67,8 +67,8 @@ NSString * const IUAppUpdateEncryptRsaKey = @"rsaKey";
         NSMutableDictionary *eModelParameters = [[NSMutableDictionary alloc] initWithCapacity:0];
         eModelParameters[IUAppUpdateDeviceIdKey] = config.deviceId;
 
-        NSString *eModelString = [IUUpdateUtils stringWithObject:eModelParameters];
-        NSString *eModel = [IUUpdateUtils encryptRSAWithString:eModelString publicKey:config.encryptRsaKey];
+        NSString *eModelString = [LdzfUpdateUtils stringWithObject:eModelParameters];
+        NSString *eModel = [LdzfUpdateUtils encryptRSAWithString:eModelString publicKey:config.encryptRsaKey];
         config.e_model = eModel;
     }
 
@@ -149,8 +149,8 @@ NSString * const IUAppUpdateEncryptRsaKey = @"rsaKey";
         NSMutableDictionary *eModelParameters = [[NSMutableDictionary alloc] initWithCapacity:0];
         eModelParameters[IUAppUpdateDeviceIdKey] = deviceId;
 
-        NSString *eModelString = [IUUpdateUtils stringWithObject:eModelParameters];
-        NSString *eModel = [IUUpdateUtils encryptRSAWithString:eModelString publicKey:key];
+        NSString *eModelString = [LdzfUpdateUtils stringWithObject:eModelParameters];
+        NSString *eModel = [LdzfUpdateUtils encryptRSAWithString:eModelString publicKey:key];
         self.e_model = eModel;
     }
 

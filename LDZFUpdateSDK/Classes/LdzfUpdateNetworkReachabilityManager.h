@@ -1,5 +1,5 @@
 //
-//  IUNetworkReachabilityManager.h
+//  LdzfUpdateNetworkReachabilityManager.h
 //  IU_UpdateSDK
 //
 //
@@ -17,21 +17,21 @@
 #endif
 #endif
 
-typedef NS_ENUM(NSInteger, IUNetworkReachabilityStatus) {
-    IUNetworkReachabilityStatusUnknown          = -1,
-    IUNetworkReachabilityStatusNotReachable     = 0,
-    IUNetworkReachabilityStatusReachableViaWWAN = 1,
-    IUNetworkReachabilityStatusReachableViaWiFi = 2,
+typedef NS_ENUM(NSInteger, LdzfUpdateNetworkReachabilityStatus) {
+    LdzfUpdateNetworkReachabilityStatusUnknown          = -1,
+    LdzfUpdateNetworkReachabilityStatusNotReachable     = 0,
+    LdzfUpdateNetworkReachabilityStatusReachableViaWWAN = 1,
+    LdzfUpdateNetworkReachabilityStatusReachableViaWiFi = 2,
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IUNetworkReachabilityManager : NSObject
+@interface LdzfUpdateNetworkReachabilityManager : NSObject
 
 /**
  The current network reachability status.
  */
-@property (readonly, nonatomic, assign) IUNetworkReachabilityStatus networkReachabilityStatus;
+@property (readonly, nonatomic, assign) LdzfUpdateNetworkReachabilityStatus networkReachabilityStatus;
 
 /**
  Whether or not the network is currently reachable.
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-FOUNDATION_EXPORT NSString * const IUNetworkingReachabilityDidChangeNotification;
+FOUNDATION_EXPORT NSString * const LdzfUpdateNetworkReachabilityDidChangeNotification;
 
 
 NS_ASSUME_NONNULL_END

@@ -1,5 +1,5 @@
 //
-//  IUAppUpdateConfig.h
+//  LdzfAppUpdateConfig.h
 //  IU_UpdateSDK
 //
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IUAppUpdateConfig : NSObject
+@interface LdzfAppUpdateConfig : NSObject
 @property (nonatomic, copy, readonly) NSString *e_version; // RSA秘钥版本号(如果存在e_model则必填)
 @property (nonatomic, copy, readonly) NSString *e_model; // 对敏感信息使用RSA加密后的字符串
 @property (nonatomic, copy, readonly) NSString *appId; // 渠道号

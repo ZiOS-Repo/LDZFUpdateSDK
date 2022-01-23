@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of LDZFUpdateSDK.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/zhuyuhui434@gmail.com/LDZFUpdateSDK",
+  "homepage": "https://github.com/ZiOS-Repo/LDZFUpdateSDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "zhuyuhui434@gmail.com": "zhuyuhui434@gmail.com"
   },
   "source": {
-    "git": "https://github.com/zhuyuhui434@gmail.com/LDZFUpdateSDK.git",
+    "git": "https://github.com/ZiOS-Repo/LDZFUpdateSDK.git",
     "tag": "0.1.0"
   },
   "platforms": {

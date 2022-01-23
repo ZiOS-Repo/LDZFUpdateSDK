@@ -7,30 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183D94336B53BE75CF9DD1476F92CAF7 /* b_function_ic_upgrade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 653DB8E51168CCE1C35384EABF6186EA /* b_function_ic_upgrade@2x.png */; };
-		2534CEF89943BD23C1415F60BBC48066 /* IUUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F58B104417661DF0A97C1833E8D111 /* IUUpdateUtils.m */; };
-		265E45EBCE2EEDF348559BD2D685CA1E /* LDZFUpdateSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A2FA490F95F485708D6A918A94C608 /* LDZFUpdateSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06E8264AB37C3DCED782BC7F17B8DA94 /* LdzfAppUpdateConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DA02A639B16A2F0FC133A1AAA83D98A1 /* LdzfAppUpdateConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071E6C4EC15A3816A7D821F75A2337E5 /* LDZFUpdateSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C721325A5F9BAE1FF38E1EB29E9A7 /* LDZFUpdateSDK-dummy.m */; };
+		07DA30D070D8D5D7C0FB919D32F88049 /* LdzfUpdateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 760350C35C79B8A6FF032C35A6E9BA44 /* LdzfUpdateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0E0CE9459CE461FF982DC38FC6227D /* LdzfUpdateNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C03767330624D8B9347E289969358 /* LdzfUpdateNetworkReachabilityManager.m */; };
+		0C9798967E2EDC1E9FF6115368B59F68 /* LdzfAppUpdateResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFEF15F422BF68291E0A569B11F1B0A /* LdzfAppUpdateResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		183D94336B53BE75CF9DD1476F92CAF7 /* b_function_ic_upgrade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F79066817B6C139D7E782921130B6833 /* b_function_ic_upgrade@2x.png */; };
 		2A0B99917028578A1A9B4B319ABAE27D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2C40E261B45F432306360F24F0420C69 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7C876739E0780C3C58653F052114C /* ReplaceMe.m */; };
+		2D079B53103EBEE4E41F3E21C6029B9D /* LdzfAppUpdateResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 543E76881B64226DB21019757291B99A /* LdzfAppUpdateResponseModel.m */; };
 		479C738AF2048A5FAF1094517B19C18A /* LDZFUpdateSDK-LDZFUpdateSDK in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D99323C2CDFA98D26D014217416A3 /* LDZFUpdateSDK-LDZFUpdateSDK */; };
 		4F691E038B65A54F227F359BBF88FC6A /* Pods-LDZFUpdateSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DFDACDA943C796DB6BD6077627880A /* Pods-LDZFUpdateSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F33097AC61F00A88B2CDCE9419634C /* IUUpdateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0A340D7F1EFB5729A593AF56A64EF2 /* IUUpdateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		570E8615174254560371C9B1E361FE20 /* LDZFUpdateSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 298322D282D63C70F62792BD7E785A53 /* LDZFUpdateSDK-dummy.m */; };
-		5EB7AE8EA7BC25DB3D8A91E2F487A1FE /* IUAppUpdateResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DB6A06183643E8E11240DE2EC9F7B1 /* IUAppUpdateResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84BD75599D467B8CDD2DFEB5D348129B /* IUNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F0355805F1275050AFDAA15059C44B6F /* IUNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8885505102F542BBE1BE6CE9D0FD5242 /* IUAppUpdateResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE427EFE123B5C9893F6646AD841AAD3 /* IUAppUpdateResponseModel.m */; };
+		52F08ACF8F0C3CFCF774BAF04854EE2E /* LdzfUpdateNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDFF256C930B9DCE7FFDED221767413 /* LdzfUpdateNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5363D03BDE32E0BE58C265B968CF78C3 /* LdzfAppUpdateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9F56780395EBAE9F9E68543F002C46 /* LdzfAppUpdateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F2585FFE5ADF31632576FA5062D6051 /* LdzfAppUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8BDEEAFDC54F42E62CC5B2CA0180F /* LdzfAppUpdateManager.m */; };
+		7675A721044649FE826A9DC1B3C945DC /* LDZFUpdateSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E84415AC4865DD4B30DBEA750A4CDCB /* LDZFUpdateSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79EA11D4B55E0F38AAD71847E5A2A34F /* LdzfAppUpdateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DF7F7D6648E1AE07F9DEED6918BE26 /* LdzfAppUpdateConfig.m */; };
+		93DB050318A28FFC94852588A588B265 /* LdzfUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5713E7B046CBADAC25EE0BA682D9556C /* LdzfUpdateUtils.m */; };
 		96CCEBD8735B3C13FF8BE6D4BE9ED726 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		ADE66B4F19CDAE02F27917E9A27C3C32 /* Pods-LDZFUpdateSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16C6D39AC8BBE57895B235AFD912B /* Pods-LDZFUpdateSDK_Tests-dummy.m */; };
 		B8C1C531C0D2F2D8B76C9CF509F675A9 /* Pods-LDZFUpdateSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3438544C36E889162E767085FF2CBA /* Pods-LDZFUpdateSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC1D592605068BED42DB7AC4D06F30D7 /* IUAppUpdateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C3960976F2AA203D7BA2ADB78E59A4 /* IUAppUpdateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDAE843C389E55EF789CDFC15AE3867B /* IUNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 645E4D968FE48F83EA54A93AD8981832 /* IUNetworkReachabilityManager.m */; };
-		C7D82CB1DFEE223C725655861BE189A1 /* IUAppUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F04F697030628F2238A2BA0BD8346BE8 /* IUAppUpdateManager.m */; };
-		D8E5E3B660F464D381C358714027E6D1 /* b_function_ic_upgrade@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B643BBA4A8E17A1CC88B56FE1B50B857 /* b_function_ic_upgrade@3x.png */; };
-		DE313EE77E9F44F569749BF08520EAA8 /* IUAppUpdateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD7B328FCA894A4AB57E897A6FD19B /* IUAppUpdateConfig.m */; };
+		D8E5E3B660F464D381C358714027E6D1 /* b_function_ic_upgrade@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B53220F4D502BDEA4CCB7B2456B77C5 /* b_function_ic_upgrade@3x.png */; };
+		DAD452BC16395080C607878880368BB9 /* LDZFUpdateSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D0EEC262E0FBDF250E4B74FF1D4640 /* LDZFUpdateSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E027C22F10128E4F4A447CD6520DDCB4 /* Pods-LDZFUpdateSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFBBCB8E53BCCDA987BA32940B7EF74 /* Pods-LDZFUpdateSDK_Example-dummy.m */; };
 		E63722B40DD07DC614F469A41D99CCCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E8B787B1CA6CBDBF7FB7A0F41B57F79E /* IUAppUpdateConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2BABDFF680210B40C9DA235AD81349 /* IUAppUpdateConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFBF7F720B8846A516EC68454CE86775 /* LDZFUpdateSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ACCFC858502B709CF857EDF6D29C57EE /* LDZFUpdateSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,54 +57,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046AD70DA96F47C5804FF91FD9A3708F /* LDZFUpdateSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LDZFUpdateSDK.modulemap; sourceTree = "<group>"; };
+		05DF7F7D6648E1AE07F9DEED6918BE26 /* LdzfAppUpdateConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfAppUpdateConfig.m; path = LDZFUpdateSDK/Classes/LdzfAppUpdateConfig.m; sourceTree = "<group>"; };
 		0C240AE6447C86541518B7264896E107 /* Pods-LDZFUpdateSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFUpdateSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C922F8DBDA1A091AE5E15DDD5A67BCA /* Pods-LDZFUpdateSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LDZFUpdateSDK_Tests"; path = Pods_LDZFUpdateSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F695B5F187CAD57692D20724DD92AB6 /* LDZFUpdateSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFUpdateSDK-prefix.pch"; sourceTree = "<group>"; };
+		0E84415AC4865DD4B30DBEA750A4CDCB /* LDZFUpdateSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDZFUpdateSDK.h; path = LDZFUpdateSDK/Classes/LDZFUpdateSDK.h; sourceTree = "<group>"; };
 		124A3E103E0B76157781EAA046BC9FF5 /* Pods-LDZFUpdateSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFUpdateSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		1BB7C876739E0780C3C58653F052114C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LDZFUpdateSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		1C2BABDFF680210B40C9DA235AD81349 /* IUAppUpdateConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUAppUpdateConfig.h; path = LDZFUpdateSDK/Classes/IUAppUpdateConfig.h; sourceTree = "<group>"; };
+		1FDFF256C930B9DCE7FFDED221767413 /* LdzfUpdateNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfUpdateNetworkReachabilityManager.h; path = LDZFUpdateSDK/Classes/LdzfUpdateNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		230121358130EFA37E62C6CFA7FF87DE /* LDZFUpdateSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFUpdateSDK.release.xcconfig; sourceTree = "<group>"; };
 		24ED59E0F9352452D6BE01E0F063359F /* Pods-LDZFUpdateSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFUpdateSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		26C36750E40F9221330A163932E5F3B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		298322D282D63C70F62792BD7E785A53 /* LDZFUpdateSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LDZFUpdateSDK-dummy.m"; sourceTree = "<group>"; };
 		2DC16C6D39AC8BBE57895B235AFD912B /* Pods-LDZFUpdateSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDZFUpdateSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		35EB9E83B72B4B2E77D4367E2AC9AA0C /* Pods-LDZFUpdateSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LDZFUpdateSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		39F3B3FA7EAB39D7811EFFB7C7462ED1 /* ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist"; sourceTree = "<group>"; };
+		3B3DC240B81C374D41524FE913215FD8 /* ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist"; sourceTree = "<group>"; };
+		3DFEF15F422BF68291E0A569B11F1B0A /* LdzfAppUpdateResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfAppUpdateResponseModel.h; path = LDZFUpdateSDK/Classes/LdzfAppUpdateResponseModel.h; sourceTree = "<group>"; };
 		4329C759E502DD7CC39D6E54E90C01C8 /* Pods-LDZFUpdateSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFUpdateSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		473C15CE73F44DBA0520A69F8BE2E7F8 /* LDZFUpdateSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFUpdateSDK.release.xcconfig; sourceTree = "<group>"; };
 		49267A48221D90796FBCBF6E1C6038E6 /* Pods-LDZFUpdateSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFUpdateSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		543E76881B64226DB21019757291B99A /* LdzfAppUpdateResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfAppUpdateResponseModel.m; path = LDZFUpdateSDK/Classes/LdzfAppUpdateResponseModel.m; sourceTree = "<group>"; };
+		5713E7B046CBADAC25EE0BA682D9556C /* LdzfUpdateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfUpdateUtils.m; path = LDZFUpdateSDK/Classes/LdzfUpdateUtils.m; sourceTree = "<group>"; };
+		578C721325A5F9BAE1FF38E1EB29E9A7 /* LDZFUpdateSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LDZFUpdateSDK-dummy.m"; sourceTree = "<group>"; };
 		5CCED49A2D7128E43CA189E3860A60E7 /* Pods-LDZFUpdateSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDZFUpdateSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5EC1DE0160CE39D47DEB858711323D0E /* LDZFUpdateSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFUpdateSDK.debug.xcconfig; sourceTree = "<group>"; };
-		602246A7FD812CC139E0324CDF331575 /* LDZFUpdateSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LDZFUpdateSDK.modulemap; sourceTree = "<group>"; };
-		645E4D968FE48F83EA54A93AD8981832 /* IUNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUNetworkReachabilityManager.m; path = LDZFUpdateSDK/Classes/IUNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		653DB8E51168CCE1C35384EABF6186EA /* b_function_ic_upgrade@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "b_function_ic_upgrade@2x.png"; path = "LDZFUpdateSDK/Assets/b_function_ic_upgrade@2x.png"; sourceTree = "<group>"; };
+		6B53220F4D502BDEA4CCB7B2456B77C5 /* b_function_ic_upgrade@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "b_function_ic_upgrade@3x.png"; path = "LDZFUpdateSDK/Assets/b_function_ic_upgrade@3x.png"; sourceTree = "<group>"; };
 		6D1D99323C2CDFA98D26D014217416A3 /* LDZFUpdateSDK-LDZFUpdateSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "LDZFUpdateSDK-LDZFUpdateSDK"; path = LDZFUpdateSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		735500CD5AA46591063BA7C7D4E72DE6 /* Pods-LDZFUpdateSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDZFUpdateSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DDD35E8CAC5E22BD032281D4D33655C /* LDZFUpdateSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LDZFUpdateSDK-Info.plist"; sourceTree = "<group>"; };
+		760350C35C79B8A6FF032C35A6E9BA44 /* LdzfUpdateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfUpdateUtils.h; path = LDZFUpdateSDK/Classes/LdzfUpdateUtils.h; sourceTree = "<group>"; };
+		7D1C1A5EB14231F1D059107C5129FAB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		831CDA520362AAE0D1379C6F89BC23BD /* Pods-LDZFUpdateSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDZFUpdateSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		85DFDACDA943C796DB6BD6077627880A /* Pods-LDZFUpdateSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDZFUpdateSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		86E5011AC7858D3F2986104E6DAA6821 /* Pods-LDZFUpdateSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDZFUpdateSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8B1516548E9D1C53CD83866406602916 /* LDZFUpdateSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LDZFUpdateSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E5A599952FFF6D8A55396C497A98835 /* LDZFUpdateSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LDZFUpdateSDK-Info.plist"; sourceTree = "<group>"; };
 		9048D3658EEC41FF038504E496331936 /* Pods-LDZFUpdateSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFUpdateSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		93956D91D8CE8DFBE1D25EA1C5449745 /* Pods-LDZFUpdateSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LDZFUpdateSDK_Example.modulemap"; sourceTree = "<group>"; };
-		99DB6A06183643E8E11240DE2EC9F7B1 /* IUAppUpdateResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUAppUpdateResponseModel.h; path = LDZFUpdateSDK/Classes/IUAppUpdateResponseModel.h; sourceTree = "<group>"; };
+		97B8BDEEAFDC54F42E62CC5B2CA0180F /* LdzfAppUpdateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfAppUpdateManager.m; path = LDZFUpdateSDK/Classes/LdzfAppUpdateManager.m; sourceTree = "<group>"; };
+		99B4F706640772FE89460C308905F4CD /* LDZFUpdateSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LDZFUpdateSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D3438544C36E889162E767085FF2CBA /* Pods-LDZFUpdateSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDZFUpdateSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E0A340D7F1EFB5729A593AF56A64EF2 /* IUUpdateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUUpdateUtils.h; path = LDZFUpdateSDK/Classes/IUUpdateUtils.h; sourceTree = "<group>"; };
-		ABFC4FE41AABDED4A1D0E2D0110996AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		ACCFC858502B709CF857EDF6D29C57EE /* LDZFUpdateSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDZFUpdateSDK.h; path = LDZFUpdateSDK/Classes/LDZFUpdateSDK.h; sourceTree = "<group>"; };
-		B2AD7B328FCA894A4AB57E897A6FD19B /* IUAppUpdateConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUAppUpdateConfig.m; path = LDZFUpdateSDK/Classes/IUAppUpdateConfig.m; sourceTree = "<group>"; };
-		B643BBA4A8E17A1CC88B56FE1B50B857 /* b_function_ic_upgrade@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "b_function_ic_upgrade@3x.png"; path = "LDZFUpdateSDK/Assets/b_function_ic_upgrade@3x.png"; sourceTree = "<group>"; };
-		B6F58B104417661DF0A97C1833E8D111 /* IUUpdateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUUpdateUtils.m; path = LDZFUpdateSDK/Classes/IUUpdateUtils.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1C03767330624D8B9347E289969358 /* LdzfUpdateNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfUpdateNetworkReachabilityManager.m; path = LDZFUpdateSDK/Classes/LdzfUpdateNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A3D0EEC262E0FBDF250E4B74FF1D4640 /* LDZFUpdateSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFUpdateSDK-umbrella.h"; sourceTree = "<group>"; };
+		AF9F56780395EBAE9F9E68543F002C46 /* LdzfAppUpdateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfAppUpdateManager.h; path = LDZFUpdateSDK/Classes/LdzfAppUpdateManager.h; sourceTree = "<group>"; };
 		BAFBBCB8E53BCCDA987BA32940B7EF74 /* Pods-LDZFUpdateSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDZFUpdateSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		BE578C459D33E7E17BD7D8216A2AA319 /* Pods-LDZFUpdateSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDZFUpdateSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C198B4255C712AFCAE3DF1290C64A1DB /* Pods-LDZFUpdateSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LDZFUpdateSDK_Example"; path = Pods_LDZFUpdateSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7A2FA490F95F485708D6A918A94C608 /* LDZFUpdateSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFUpdateSDK-umbrella.h"; sourceTree = "<group>"; };
+		C92D851B586A4F1A398EB6F3EF87814F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CA87CA6DB15D5962729EA790EB4FFA71 /* LDZFUpdateSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFUpdateSDK-prefix.pch"; sourceTree = "<group>"; };
+		D3E8F2E147C26AE25FAC66ED779595B0 /* LDZFUpdateSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFUpdateSDK.debug.xcconfig; sourceTree = "<group>"; };
 		D7DADF69526C7372FE94924FA4CE3642 /* LDZFUpdateSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LDZFUpdateSDK; path = LDZFUpdateSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4C3960976F2AA203D7BA2ADB78E59A4 /* IUAppUpdateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUAppUpdateManager.h; path = LDZFUpdateSDK/Classes/IUAppUpdateManager.h; sourceTree = "<group>"; };
-		F0355805F1275050AFDAA15059C44B6F /* IUNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IUNetworkReachabilityManager.h; path = LDZFUpdateSDK/Classes/IUNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		F04F697030628F2238A2BA0BD8346BE8 /* IUAppUpdateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUAppUpdateManager.m; path = LDZFUpdateSDK/Classes/IUAppUpdateManager.m; sourceTree = "<group>"; };
-		FE427EFE123B5C9893F6646AD841AAD3 /* IUAppUpdateResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IUAppUpdateResponseModel.m; path = LDZFUpdateSDK/Classes/IUAppUpdateResponseModel.m; sourceTree = "<group>"; };
+		DA02A639B16A2F0FC133A1AAA83D98A1 /* LdzfAppUpdateConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfAppUpdateConfig.h; path = LDZFUpdateSDK/Classes/LdzfAppUpdateConfig.h; sourceTree = "<group>"; };
+		F79066817B6C139D7E782921130B6833 /* b_function_ic_upgrade@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "b_function_ic_upgrade@2x.png"; path = "LDZFUpdateSDK/Assets/b_function_ic_upgrade@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,14 +158,27 @@
 			path = "Target Support Files/Pods-LDZFUpdateSDK_Example";
 			sourceTree = "<group>";
 		};
-		35FE8A3CE55378BEBEFA133F63CB22FE /* Pod */ = {
+		3CD40A3FE756F79DABA75F7179CBCB11 /* LDZFUpdateSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8B1516548E9D1C53CD83866406602916 /* LDZFUpdateSDK.podspec */,
-				ABFC4FE41AABDED4A1D0E2D0110996AD /* LICENSE */,
-				26C36750E40F9221330A163932E5F3B9 /* README.md */,
+				F79066817B6C139D7E782921130B6833 /* b_function_ic_upgrade@2x.png */,
+				6B53220F4D502BDEA4CCB7B2456B77C5 /* b_function_ic_upgrade@3x.png */,
+				DA02A639B16A2F0FC133A1AAA83D98A1 /* LdzfAppUpdateConfig.h */,
+				05DF7F7D6648E1AE07F9DEED6918BE26 /* LdzfAppUpdateConfig.m */,
+				AF9F56780395EBAE9F9E68543F002C46 /* LdzfAppUpdateManager.h */,
+				97B8BDEEAFDC54F42E62CC5B2CA0180F /* LdzfAppUpdateManager.m */,
+				3DFEF15F422BF68291E0A569B11F1B0A /* LdzfAppUpdateResponseModel.h */,
+				543E76881B64226DB21019757291B99A /* LdzfAppUpdateResponseModel.m */,
+				1FDFF256C930B9DCE7FFDED221767413 /* LdzfUpdateNetworkReachabilityManager.h */,
+				9E1C03767330624D8B9347E289969358 /* LdzfUpdateNetworkReachabilityManager.m */,
+				0E84415AC4865DD4B30DBEA750A4CDCB /* LDZFUpdateSDK.h */,
+				760350C35C79B8A6FF032C35A6E9BA44 /* LdzfUpdateUtils.h */,
+				5713E7B046CBADAC25EE0BA682D9556C /* LdzfUpdateUtils.m */,
+				7922CE8CDAA2A47F051CAA6395DF198C /* Pod */,
+				8F09DDE8D354F90C2BEDFF473FE926DE /* Support Files */,
 			);
-			name = Pod;
+			name = LDZFUpdateSDK;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		5489D6F8DE3BB69A88193CE434FF3EDC /* Targets Support Files */ = {
@@ -206,9 +217,35 @@
 		6D3132A61813383210172911DAEB03BC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B76CF865C61CC09620BE1314F8E4D51 /* LDZFUpdateSDK */,
+				3CD40A3FE756F79DABA75F7179CBCB11 /* LDZFUpdateSDK */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7922CE8CDAA2A47F051CAA6395DF198C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				99B4F706640772FE89460C308905F4CD /* LDZFUpdateSDK.podspec */,
+				C92D851B586A4F1A398EB6F3EF87814F /* LICENSE */,
+				7D1C1A5EB14231F1D059107C5129FAB2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8F09DDE8D354F90C2BEDFF473FE926DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				046AD70DA96F47C5804FF91FD9A3708F /* LDZFUpdateSDK.modulemap */,
+				578C721325A5F9BAE1FF38E1EB29E9A7 /* LDZFUpdateSDK-dummy.m */,
+				8E5A599952FFF6D8A55396C497A98835 /* LDZFUpdateSDK-Info.plist */,
+				CA87CA6DB15D5962729EA790EB4FFA71 /* LDZFUpdateSDK-prefix.pch */,
+				A3D0EEC262E0FBDF250E4B74FF1D4640 /* LDZFUpdateSDK-umbrella.h */,
+				D3E8F2E147C26AE25FAC66ED779595B0 /* LDZFUpdateSDK.debug.xcconfig */,
+				230121358130EFA37E62C6CFA7FF87DE /* LDZFUpdateSDK.release.xcconfig */,
+				3B3DC240B81C374D41524FE913215FD8 /* ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LDZFUpdateSDK";
 			sourceTree = "<group>";
 		};
 		9AFCB14E17067E3DBF4304D8F291DCEC /* Products */ = {
@@ -220,46 +257,6 @@
 				0C922F8DBDA1A091AE5E15DDD5A67BCA /* Pods-LDZFUpdateSDK_Tests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9B76CF865C61CC09620BE1314F8E4D51 /* LDZFUpdateSDK */ = {
-			isa = PBXGroup;
-			children = (
-				653DB8E51168CCE1C35384EABF6186EA /* b_function_ic_upgrade@2x.png */,
-				B643BBA4A8E17A1CC88B56FE1B50B857 /* b_function_ic_upgrade@3x.png */,
-				1C2BABDFF680210B40C9DA235AD81349 /* IUAppUpdateConfig.h */,
-				B2AD7B328FCA894A4AB57E897A6FD19B /* IUAppUpdateConfig.m */,
-				E4C3960976F2AA203D7BA2ADB78E59A4 /* IUAppUpdateManager.h */,
-				F04F697030628F2238A2BA0BD8346BE8 /* IUAppUpdateManager.m */,
-				99DB6A06183643E8E11240DE2EC9F7B1 /* IUAppUpdateResponseModel.h */,
-				FE427EFE123B5C9893F6646AD841AAD3 /* IUAppUpdateResponseModel.m */,
-				F0355805F1275050AFDAA15059C44B6F /* IUNetworkReachabilityManager.h */,
-				645E4D968FE48F83EA54A93AD8981832 /* IUNetworkReachabilityManager.m */,
-				9E0A340D7F1EFB5729A593AF56A64EF2 /* IUUpdateUtils.h */,
-				B6F58B104417661DF0A97C1833E8D111 /* IUUpdateUtils.m */,
-				ACCFC858502B709CF857EDF6D29C57EE /* LDZFUpdateSDK.h */,
-				1BB7C876739E0780C3C58653F052114C /* ReplaceMe.m */,
-				35FE8A3CE55378BEBEFA133F63CB22FE /* Pod */,
-				C5AC6A8674832AA5709E1A881BF86B92 /* Support Files */,
-			);
-			name = LDZFUpdateSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C5AC6A8674832AA5709E1A881BF86B92 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				602246A7FD812CC139E0324CDF331575 /* LDZFUpdateSDK.modulemap */,
-				298322D282D63C70F62792BD7E785A53 /* LDZFUpdateSDK-dummy.m */,
-				7DDD35E8CAC5E22BD032281D4D33655C /* LDZFUpdateSDK-Info.plist */,
-				0F695B5F187CAD57692D20724DD92AB6 /* LDZFUpdateSDK-prefix.pch */,
-				D7A2FA490F95F485708D6A918A94C608 /* LDZFUpdateSDK-umbrella.h */,
-				5EC1DE0160CE39D47DEB858711323D0E /* LDZFUpdateSDK.debug.xcconfig */,
-				473C15CE73F44DBA0520A69F8BE2E7F8 /* LDZFUpdateSDK.release.xcconfig */,
-				39F3B3FA7EAB39D7811EFFB7C7462ED1 /* ResourceBundle-LDZFUpdateSDK-LDZFUpdateSDK-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LDZFUpdateSDK";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -300,17 +297,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55EFBBEA7CB9214D4B7FED5402B24815 /* Headers */ = {
+		36204AE0DE51865ECD8A8B50209F3E4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B787B1CA6CBDBF7FB7A0F41B57F79E /* IUAppUpdateConfig.h in Headers */,
-				BC1D592605068BED42DB7AC4D06F30D7 /* IUAppUpdateManager.h in Headers */,
-				5EB7AE8EA7BC25DB3D8A91E2F487A1FE /* IUAppUpdateResponseModel.h in Headers */,
-				84BD75599D467B8CDD2DFEB5D348129B /* IUNetworkReachabilityManager.h in Headers */,
-				54F33097AC61F00A88B2CDCE9419634C /* IUUpdateUtils.h in Headers */,
-				EFBF7F720B8846A516EC68454CE86775 /* LDZFUpdateSDK.h in Headers */,
-				265E45EBCE2EEDF348559BD2D685CA1E /* LDZFUpdateSDK-umbrella.h in Headers */,
+				06E8264AB37C3DCED782BC7F17B8DA94 /* LdzfAppUpdateConfig.h in Headers */,
+				5363D03BDE32E0BE58C265B968CF78C3 /* LdzfAppUpdateManager.h in Headers */,
+				0C9798967E2EDC1E9FF6115368B59F68 /* LdzfAppUpdateResponseModel.h in Headers */,
+				52F08ACF8F0C3CFCF774BAF04854EE2E /* LdzfUpdateNetworkReachabilityManager.h in Headers */,
+				7675A721044649FE826A9DC1B3C945DC /* LDZFUpdateSDK.h in Headers */,
+				DAD452BC16395080C607878880368BB9 /* LDZFUpdateSDK-umbrella.h in Headers */,
+				07DA30D070D8D5D7C0FB919D32F88049 /* LdzfUpdateUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +318,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A9AED1278C65C9EEF216F8DCD3B203D /* Build configuration list for PBXNativeTarget "LDZFUpdateSDK" */;
 			buildPhases = (
-				55EFBBEA7CB9214D4B7FED5402B24815 /* Headers */,
-				7180311306AE665B059DC89AF57DAFFB /* Sources */,
+				36204AE0DE51865ECD8A8B50209F3E4D /* Headers */,
+				448B0E38A4B41BC7E40A80F498D82308 /* Sources */,
 				52264B737F9B436C929330E85713E5A7 /* Frameworks */,
 				7F962496F1FFE3E25361F07511747540 /* Resources */,
 			);
@@ -464,25 +461,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		448B0E38A4B41BC7E40A80F498D82308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EA11D4B55E0F38AAD71847E5A2A34F /* LdzfAppUpdateConfig.m in Sources */,
+				5F2585FFE5ADF31632576FA5062D6051 /* LdzfAppUpdateManager.m in Sources */,
+				2D079B53103EBEE4E41F3E21C6029B9D /* LdzfAppUpdateResponseModel.m in Sources */,
+				0A0E0CE9459CE461FF982DC38FC6227D /* LdzfUpdateNetworkReachabilityManager.m in Sources */,
+				071E6C4EC15A3816A7D821F75A2337E5 /* LDZFUpdateSDK-dummy.m in Sources */,
+				93DB050318A28FFC94852588A588B265 /* LdzfUpdateUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		606EB70307E89F7C7F3E1B35072AB889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ADE66B4F19CDAE02F27917E9A27C3C32 /* Pods-LDZFUpdateSDK_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7180311306AE665B059DC89AF57DAFFB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE313EE77E9F44F569749BF08520EAA8 /* IUAppUpdateConfig.m in Sources */,
-				C7D82CB1DFEE223C725655861BE189A1 /* IUAppUpdateManager.m in Sources */,
-				8885505102F542BBE1BE6CE9D0FD5242 /* IUAppUpdateResponseModel.m in Sources */,
-				BDAE843C389E55EF789CDFC15AE3867B /* IUNetworkReachabilityManager.m in Sources */,
-				2534CEF89943BD23C1415F60BBC48066 /* IUUpdateUtils.m in Sources */,
-				570E8615174254560371C9B1E361FE20 /* LDZFUpdateSDK-dummy.m in Sources */,
-				2C40E261B45F432306360F24F0420C69 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +515,7 @@
 /* Begin XCBuildConfiguration section */
 		22C7015810A56D9272C5DC3003EDD54F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 473C15CE73F44DBA0520A69F8BE2E7F8 /* LDZFUpdateSDK.release.xcconfig */;
+			baseConfigurationReference = 230121358130EFA37E62C6CFA7FF87DE /* LDZFUpdateSDK.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -616,7 +612,7 @@
 		};
 		301E277F236F7890BED3EB2DB56964C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EC1DE0160CE39D47DEB858711323D0E /* LDZFUpdateSDK.debug.xcconfig */;
+			baseConfigurationReference = D3E8F2E147C26AE25FAC66ED779595B0 /* LDZFUpdateSDK.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LDZFUpdateSDK";
 				IBSC_MODULE = LDZFUpdateSDK;
@@ -665,7 +661,7 @@
 		};
 		63A471D580AA1887FE0514F396EA1208 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 473C15CE73F44DBA0520A69F8BE2E7F8 /* LDZFUpdateSDK.release.xcconfig */;
+			baseConfigurationReference = 230121358130EFA37E62C6CFA7FF87DE /* LDZFUpdateSDK.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LDZFUpdateSDK";
 				IBSC_MODULE = LDZFUpdateSDK;
@@ -714,7 +710,7 @@
 		};
 		B0937CF12CAAC8BC0CFE06407BC37392 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EC1DE0160CE39D47DEB858711323D0E /* LDZFUpdateSDK.debug.xcconfig */;
+			baseConfigurationReference = D3E8F2E147C26AE25FAC66ED779595B0 /* LDZFUpdateSDK.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -797,8 +793,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

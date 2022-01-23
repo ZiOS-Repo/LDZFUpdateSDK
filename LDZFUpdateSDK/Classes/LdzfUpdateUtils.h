@@ -1,5 +1,5 @@
 //
-//  IUUpdateUtils.h
+//  LdzfUpdateUtils.h
 //  IU_UpdateSDK
 //
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IUUpdateUtils : NSObject
+@interface LdzfUpdateUtils : NSObject
 
 + (NSString *)encryptRSAWithString:(NSString *)string publicKey:(NSString *)publicKey;
 

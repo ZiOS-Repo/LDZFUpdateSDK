@@ -1,12 +1,12 @@
 //
-//  IUAppUpdateResponseModel.h
+//  LdzfAppUpdateResponseModel.h
 //  IU_UpdateSDK
 //
 //
 
 #import <Foundation/Foundation.h>
 
-@interface IUAppUpdateResponseModel : NSObject
+@interface LdzfAppUpdateResponseModel : NSObject
 ///错误信息
 @property(strong,nonatomic)NSString *errMsg;
 
